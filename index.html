@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== FONTAWESOME ====================-->
+    <script src="https://kit.fontawesome.com/a5d00b9e77.js" crossorigin="anonymous"></script>
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Personal Resume|自己ポートフォリオ| 🗣 🇨🇳🇯🇵🌐</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">CHINHOKYO</a>
+            <div class="home__social-icon" id="heart-anime"></div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="fas fa-home nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="far fa-smile nav__icon"></i> 履歴PR
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fas fa-code nav__icon"></i> スキルセット
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="fas fa-hat-wizard nav__icon"></i> 過去経歴・資格
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="fas fa-palette nav__icon"></i> 作品
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="far fa-bell nav__icon"></i> 問い合わせ
+                        </a>
+                    </li>
+                </ul>
+                <i class="far fa-times-circle nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-grip-horizontal"></i>
+                </div>
+                <!-- Global -->
+                <select name="language" id="nav-language">
+                    <option value="japan" selected>日本語</option>
+                    <option value="english">英語</option>
+                    <option value="china">中国語</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://chihokyo.com" target="_blank" class="home__social-icon tooltip">
+                            <i class="fas fa-blog"></i>
+                            <span class="tooltiptext">技術ブログ<br />使用言語:Django</span>
+                        </a>
+                        <a href="https://github.com/chihokyo" target="_blank" class="home__social-icon tooltip">
+                            <i class="fab fa-github"></i>
+                            <span class="tooltiptext">日々精進Github</span>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <img src="assets/img/perfil.png" alt="home__blob-img" class="home__blob-img">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">こんにちは<br />CHINHOKYO参上！</h1>
+                        <h3 class="home__subtitle">フロントエンジニア</h3>
+                        <p class="home__description">
+                            私は日本在住の中国人です。現在、東京のIT企業でフロントエンドエンジニアとしてソフトウェア開発に携わっています。探究心旺盛で、粘り強く最後まで諦めない持ち主で、❤
+                            仲良く絡んでくださいね。</p>
+                        <a href="#contact" class="button button--flex tooltip">
+                            メール問い合わせ <i class="far fa-envelope button__icon"></i>
+                            <span class="tooltiptext">求人や案件依頼など<br />気軽にメールしてください</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <span class="home__scroll-name">スクロールしてみて</span>
+                        <i class="fas fa-angle-double-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">私誰かな?</h2>
+            <span class="section__subtitle">自己PR & CVダウンロード</span>
+
+            <div class="about__container container">
+                <div class="section__title">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                </div>
+                <div class="about__data">
+                    <p class="about__description">
+                        中国語のネイティブスピーカーであり、ビジネスレベルの日本語能力を持ち、今までの現場は全部日本語を使い、設計や要件定義上流工程から製造、テスト、リリースまで経験したことがあります。簡単な英語会話も話せます。<br />Code
+                        knows no borders.　※コード国境なき</p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">05+</span>
+                            <span class="about__info-name">年<br> 経験年数</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">10+</span>
+                            <span class="about__info-name">個<br>経験案件</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">05+</span>
+                            <span class="about__info-name">個<br>現場経験</span>
+                        </div>
+                    </div>
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/chin-cv.pdf" class="button button--flex">
+                            ダウンロード CV
+                            <i class="fas fa-file-download button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">スキルセット</h2>
+            <span class="section__subtitle">スキル経験値UP中↑</span>
+            <div class="skills__container container grid">
+                <!-- skill 1 -->
+                <div>
+                    <div class="skills__content skills__open" id="front-skills">
+                        <div class="skills__header">
+                            <i class="fas fa-paint-brush skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">フロントエンド</h1>
+                                <span class="skills__subtitle">3年以上4年目</span>
+                            </div>
+                            <i class="fas fa-angle-up skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScrpit</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React&Vue</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- skill 2 -->
+                <div>
+                    <div class="skills__content skills__close" id="backend-skills">
+                        <div class="skills__header">
+                            <i class="fas fa-code skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">バックエンド</h1>
+                                <span class="skills__subtitle">3年以上4年目</span>
+                            </div>
+
+                            <i class="fas fa-angle-up skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JAVA</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PYTHON</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">NODEJS</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__nodejs"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">過去経歴</h2>
+            <span class="section__subtitle">学歴・過去経験プロジェクト</span>
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#work'>
+                        <i class="fas fa-wrench qualification__icon"></i>
+                        経歴
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target='#education'>
+                        <i class="fas fa-user-graduate qualification__icon"></i>
+                        学歴
+                    </div>
+
+                </div>
+
+                <div class="qualification__sections">
+
+                    <!--==================== QUALIFICATION CONTENT 1==================== -->
+                    <div class="qualification__content qualification__active" data-content id="work">
+                        <!-- QUA 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">プログラマー</h3>
+                                <span class="qualification__subtitle">PHP&Laravel</span>
+                                <div class="qualification__calender">
+                                    2017.4 - 2017.12
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!-- QUA 2-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Webデザインナー</h3>
+                                <span class="qualification__subtitle">H5C3&Python</span>
+                                <div class="qualification__calender">
+                                    2018.1 - 2018.7
+                                </div>
+                            </div>
+                        </div>
+                        <!-- QUA 3 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">エンジニア</h3>
+                                <span class="qualification__subtitle">Java&PHP</span>
+                                <div class="qualification__calender">
+                                    2018.8 - Now
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION CONTENT 2 ==================== -->
+                    <div class="qualification__content" data-content id="education">
+                        <!-- QUA 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">学士:日本語専攻</h3>
+                                <span class="qualification__subtitle">中国大学</span>
+                                <div class="qualification__calender">
+                                    2010 - 2014
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!-- QUA 2-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">修士:日本語教育研究科</h3>
+                                <span class="qualification__subtitle">日本留学</span>
+                                <div class="qualification__calender">
+                                    2014 - 2017
+                                </div>
+                            </div>
+                        </div>
+                        <!-- QUA 3 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">新卒IT独学</h3>
+                                <span class="qualification__subtitle">日本新卒</span>
+                                <div class="qualification__calender">
+                                    2017 - 2018
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!-- QUA 4 -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">IT業界続き...</h3>
+                                <span class="qualification__subtitle">日本社会人</span>
+                                <div class="qualification__calender">
+                                    2018 - NOW
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">資格＆できること</h2>
+            <span class="section__subtitle">私にできること</span>
+
+            <div class="services__container container grid">
+                <!--==================== SERVICES CONTENT 1 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="fas fa-mouse services__icon"></i>
+                        <h3 class="services__title">デザイン系</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View more <i class="fas fa-mouse button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Designer</h4>
+                            <i class="fas fa-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>TODO</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>TODO</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>TODO</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>TODO</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SERVICES CONTENT 2 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="fas fa-mouse services__icon"></i>
+                        <h3 class="services__title">言語系</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View more <i class="fas fa-mouse button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Backend2</h4>
+                            <i class="fas fa-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>TODOTODO</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>TODOTODO</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>TODOTODO</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>TODOTODO</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SERVICES CONTENT 3 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="fas fa-mouse services__icon"></i>
+                        <h3 class="services__title">汎用ツール系</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View more <i class="fas fa-mouse button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">工事中...</h4>
+                            <i class="fas fa-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>工事中...</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>工事中...</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>工事中...</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="fas fa-mouse services__modal-icon"></i>
+                                    <p>工事中...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">作品</h2>
+            <span class="section__subtitle">直近の作品</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">個人ブログ</h3>
+                            <p class="portfolio__description">工事中...</p>
+                            <a href="" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-chevron-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">工事中...</h3>
+                            <p class="portfolio__description">工事中...</p>
+                            <a href="" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-chevron-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">工事中...</h3>
+                            <p class="portfolio__description">工事中...</p>
+                            <a href="" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-chevron-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="fas fa-chevron-right swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fas fa-chevron-left swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">案件依頼や相談がございましたら...</h2>
+                        <p class="project__description">力尽きまで頑張ります!</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            メール
+                            <i class="far fa-envelope project__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/project.png" alt="" class="project__img">
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">お問い合わせ</h2>
+            <span class="section__subtitle"></span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="far fa-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">メール</h3>
+                            <span class="contact__subtitle">todo@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="fab fa-twitter-square contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">チャット</h3>
+                            <span class="contact__subtitle"><a href="xxxx" class="contact__link">@chihokyo</a></span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="fas fa-map-marker-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">ローケーション</h3>
+                            <span class="contact__subtitle">Tokyo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">名前</label>
+                                <input type="text" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="" class="contact__label">メールアドレス</label>
+                                <input type="email" class="contact__input">
+                            </div>
+
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">件名</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">詳細</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="" class="button button--flex">
+                                送信する
+                                <i class="far fa-paper-plane button__icon"></i>
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">CHINHOKYO</h1>
+                    <span class="footer__subtitle"> Frontend Developer
+                    </span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">履歴PR</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">スキルセット</a>
+                    </li>
+                    <li>
+                        <a href="#contactme" class="footer__link">お問い合わせ</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__social">
+                        <i class="fab fa-weibo"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169 CHINHOKYO. All right reserved</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
