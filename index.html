@@ -42,7 +42,7 @@
                     </li>
                     <li class="nav__item">
                         <a href="#qualification" class="nav__link">
-                            <i class="fas fa-hat-wizard nav__icon"></i> 過去経歴・資格
+                            <i class="fas fa-hat-wizard nav__icon"></i> 過去経歴
                         </a>
                     </li>
                     <li class="nav__item">
@@ -103,7 +103,7 @@
                         <p class="home__description">
                             私は日本在住の中国人です。現在、東京のIT企業でフロントエンドエンジニアとしてソフトウェア開発に携わっています。探究心旺盛で、粘り強く最後まで諦めない持ち主で、❤
                             仲良く絡んでくださいね。</p>
-                        <a href="#contact" class="button button--flex tooltip">
+                        <a href="mailto:info@chihokyo.com?Subject=【CHIHOKYO】自己ポートフォリオから"" class="button button--flex tooltip">
                             メール問い合わせ <i class="far fa-envelope button__icon"></i>
                             <span class="tooltiptext">求人や案件依頼など<br />気軽にメールしてください</span>
                         </a>
@@ -583,7 +583,7 @@
 
                         <div>
                             <h3 class="contact__title">メール</h3>
-                            <span class="contact__subtitle">todo@gmail.com</span>
+                            <span class="contact__subtitle">info@chihokyo.com</span>
                         </div>
                     </div>
 
@@ -607,36 +607,35 @@
                 </div>
 
                 <div>
-                    <form action="" class="contact__form grid">
+                    <form action="mailto:info@chihokyo.com" class="contact__form grid" method="GET" enctype="text/plain" id="test" >
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">名前</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" class="contact__input" id="name" name="名前" required>
                             </div>
 
                             <div class="contact__content">
                                 <label for="" class="contact__label">メールアドレス</label>
-                                <input type="email" class="contact__input">
+                                <input type="email" class="contact__input" id="email" name="" equired>
                             </div>
 
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">件名</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" class="contact__input" id="subject" name="subject" required>
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">詳細</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <textarea name="詳細" id="" cols="0" rows="7" class="contact__input" id="message" required></textarea>
                         </div>
 
                         <div>
-                            <a href="" class="button button--flex">
-                                送信する
-                                <i class="far fa-paper-plane button__icon"></i>
-                            </a>
+                            <button type="submit"class="button button--flex input__botton">
+                                送信する<i class="far fa-paper-plane button__icon"></i>
+                            </button>
                         </div>
-
+                        <input type="hidden" name="body" />
                     </form>
                 </div>
             </div>

@@ -199,13 +199,35 @@ langSelect.onchange = (e) => {
     let selectValue = langSelect.options[index].value
     switch (selectValue) {
         case "china":
-            window.location.href="index_cn.html"
+            window.location.href = "index_cn.html"
             break;
         case "english":
-            window.location.href="index_eg.html"
+            window.location.href = "index_eg.html"
             break;
         default:
-            window.location.href="index.html"
+            window.location.href = "index.html"
             break;
     }
+}
+
+/*==================== CONTACT FORM ====================*/
+const form = document.getElementsByTagName('form')[0];
+
+form.addEventListener('submit', contact, false);
+function contact(e) {
+    e.preventDefault();
+
+    let target = e.target || e.srcElement;
+    let i = 0;
+    let message = '';
+
+    for (i = 0; i < target.length; ++i) {
+        if (target[i].type != 'text' && target[i].type != 'textarea') {
+            continue;
+        }
+        message += target[i].name + '：' + target[i].value + '\r\n';
+    }
+    target.elements["body"].value = message;
+
+    this.submit();
 }
