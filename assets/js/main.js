@@ -110,23 +110,6 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
   keyboard: true,
 });
 
-let swiperTestimonial = new Swiper(".testimonial__container", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 48,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    568: {
-      sildePreView: 2,
-    },
-  },
-});
-
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 
 function scrollHeader() {

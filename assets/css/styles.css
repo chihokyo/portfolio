@@ -1231,10 +1231,10 @@ img {
     font-size: 3.5rem;
   }
   .swiper-button-prev {
-    left: -3.5rem;
+    left: 8rem;
   }
   .swiper-button-next {
-    right: -3.5rem;
+    right: 8rem;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
