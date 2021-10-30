@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅に出よう!</title>
+
+    <!--==================== SWIPER JS====================-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--==================== FONT-AWESOME ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--==================== SCROLLREVEAL JS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
+    <!--==================== ANIMATE ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>旅</span>トラベル</a>
+        <nav class="navbar">
+            <a href="#home">ホーム</a>
+            <a href="#book">予約</a>
+            <a href="#packages">コース</a>
+            <a href="#services">サービス</a>
+            <a href="#gallery">ギャラリー</a>
+            <a href="#review">レビュー</a>
+            <a href="#contact">お問合せ</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="検索...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!--==================== LOGIN ====================-->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>ログイン</h3>
+            <input type="email" class="box" placeholder="メールアドレス">
+            <input type="password" class="box" placeholder="パスワード">
+            <input type="submit" value="ログイン" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">ログイン情報を保存</label>
+            <p><a href="#">パスワードをお忘れの方</a></p>
+            <p><a href="#">はじめてご利用の方（新規会員登録）</a></p>
+        </form>
+    </div>
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3 class="animated swing delay-1s infinite">旅に出よう~</h3>
+            <p>ホテル・旅館予約ならトラベル公式サイトで。</br>人気の温泉旅館や高級ホテルからビジネスホテルの予約まで簡単検索</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="assets/video-1.mp4"></span>
+            <span class="vid-btn" data-src="assets/video-2.mp4"></span>
+            <span class="vid-btn" data-src="assets/video-3.mp4"></span>
+            <span class="vid-btn" data-src="assets/video-4.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="assets/video-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!--==================== BOOK ====================-->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>今</span>
+            <span>す</span>
+            <span>ぐ</span>
+            <span class="space"></span>
+            <span>予</span>
+            <span>約</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="assets/book-img.png" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>到着地</h3>
+                    <input type="text" placeholder="東京">
+                </div>
+                <div class="inputBox">
+                    <h3>人数</h3>
+                    <input type="number" placeholder="2">
+                </div>
+                <div class="inputBox">
+                    <h3>行き</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>帰り</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+    <!--==================== PACKAGES ====================-->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>お</span>
+            <span>す</span>
+            <span>す</span>
+            <span>め</span>
+            <span>の</span>
+            <span>路</span>
+            <span>線</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="assets/p-1.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> グアム </h3>
+                    <p>国内の宿泊と航空券がセットでおトク！　人気エリアから厳選したホテルをピックアップしました</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 25,720円~ <span>380,000円</span> </div>
+                    <a href="#" class="btn">予約</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/p-2.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> ハワイ </h3>
+                    <p>国内の宿泊と航空券がセットでおトク！　人気エリアから厳選したホテルをピックアップしました</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 25,720円~ <span>380,000円</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/p-3.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> タイ </h3>
+                    <p>国内の宿泊と航空券がセットでおトク！　人気エリアから厳選したホテルをピックアップしました</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 25,720円~ <span>380,000円</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/p-4.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> 沖縄 </h3>
+                    <p>国内の宿泊と航空券がセットでおトク！　人気エリアから厳選したホテルをピックアップしました</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 25,720円~ <span>380,000円</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/p-5.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> パリ </h3>
+                    <p>国内の宿泊と航空券がセットでおトク！　人気エリアから厳選したホテルをピックアップしました</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 25,720円~ <span>380,000円</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/p-6.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> 香港 </h3>
+                    <p>国内の宿泊と航空券がセットでおトク！　人気エリアから厳選したホテルをピックアップしました</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 25,720円~ <span>380,000円</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================== SERVICES ====================-->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>魅</span>
+            <span>力</span>
+            <span>の</span>
+            <span>サ</span>
+            <span>ー</span>
+            <span>ビ</span>
+            <span>ス</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>ホテル</h3>
+                <p>広大な自然のなかで、アクティビティに温泉、寺社仏閣に世界遺産を訪れたりと、さまざまな楽しみ方ができる国立公園。北海道から沖縄まで全34カ所が指定されており、その土地で育まれた自然や人々の歴史・文化などの魅力に触れることができます。
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>飲食</h3>
+                <p>広大な自然のなかで、アクティビティに温泉、寺社仏閣に世界遺産を訪れたりと、さまざまな楽しみ方ができる国立公園。北海道から沖縄まで全34カ所が指定されており、その土地で育まれた自然や人々の歴史・文化などの魅力に触れることができます。
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>セキュリティー</h3>
+                <p>広大な自然のなかで、アクティビティに温泉、寺社仏閣に世界遺産を訪れたりと、さまざまな楽しみ方ができる国立公園。北海道から沖縄まで全34カ所が指定されており、その土地で育まれた自然や人々の歴史・文化などの魅力に触れることができます。
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>世界安心</h3>
+                <p>広大な自然のなかで、アクティビティに温泉、寺社仏閣に世界遺産を訪れたりと、さまざまな楽しみ方ができる国立公園。北海道から沖縄まで全34カ所が指定されており、その土地で育まれた自然や人々の歴史・文化などの魅力に触れることができます。
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>最速</h3>
+                <p>広大な自然のなかで、アクティビティに温泉、寺社仏閣に世界遺産を訪れたりと、さまざまな楽しみ方ができる国立公園。北海道から沖縄まで全34カ所が指定されており、その土地で育まれた自然や人々の歴史・文化などの魅力に触れることができます。
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>アドベンチャー</h3>
+                <p>広大な自然のなかで、アクティビティに温泉、寺社仏閣に世界遺産を訪れたりと、さまざまな楽しみ方ができる国立公園。北海道から沖縄まで全34カ所が指定されており、その土地で育まれた自然や人々の歴史・文化などの魅力に触れることができます。
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--==================== GALLERY ====================-->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>ギ</span>
+            <span>ャ</span>
+            <span>ラ</span>
+            <span>リ</span>
+            <span>ー</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="assets/g-1.jpg" alt="">
+                <div class="content">
+                    <h3>おすすめポイント</h3>
+                    <p>お部屋でゆったり、いつでも好きな時に自分たちだけの温泉を満喫</p>
+                    <a href="#" class="btn">もっと見る</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/g-2.jpg" alt="">
+                <div class="content">
+                    <h3>おすすめポイント</h3>
+                    <p>お部屋でゆったり、いつでも好きな時に自分たちだけの温泉を満喫</p>
+                    <a href="#" class="btn">もっと見る</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/g-3.jpg" alt="">
+                <div class="content">
+                    <h3>おすすめポイント</h3>
+                    <p>お部屋でゆったり、いつでも好きな時に自分たちだけの温泉を満喫</p>
+                    <a href="#" class="btn">もっと見る</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/g-4.jpg" alt="">
+                <div class="content">
+                    <h3>おすすめポイント</h3>
+                    <p>お部屋でゆったり、いつでも好きな時に自分たちだけの温泉を満喫</p>
+                    <a href="#" class="btn">もっと見る</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/g-5.jpg" alt="">
+                <div class="content">
+                    <h3>おすすめポイント</h3>
+                    <p>お部屋でゆったり、いつでも好きな時に自分たちだけの温泉を満喫</p>
+                    <a href="#" class="btn">もっと見る</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/g-6.jpg" alt="">
+                <div class="content">
+                    <h3>おすすめポイント</h3>
+                    <p>お部屋でゆったり、いつでも好きな時に自分たちだけの温泉を満喫</p>
+                    <a href="#" class="btn">もっと見る</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/g-7.jpg" alt="">
+                <div class="content">
+                    <h3>おすすめポイント</h3>
+                    <p>お部屋でゆったり、いつでも好きな時に自分たちだけの温泉を満喫</p>
+                    <a href="#" class="btn">もっと見る</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/g-8.jpg" alt="">
+                <div class="content">
+                    <h3>おすすめポイント</h3>
+                    <p>お部屋でゆったり、いつでも好きな時に自分たちだけの温泉を満喫</p>
+                    <a href="#" class="btn">もっと見る</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/g-9.jpg" alt="">
+                <div class="content">
+                    <h3>おすすめポイント</h3>
+                    <p>お部屋でゆったり、いつでも好きな時に自分たちだけの温泉を満喫</p>
+                    <a href="#" class="btn">もっと見る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================== REVIEW ====================-->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>お</span>
+            <span>客</span>
+            <span>さ</span>
+            <span>ま</span>
+            <span>の</span>
+            <span>声</span>
+        </h1>
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="assets/pic1.png" alt="">
+                        <h3>投稿者さん</h3>
+                        <p>ラウンジもお料理美味しいですしメニューも豊富、スタッフの方もフレンドリーに接していただきました
+                            またハワイに行く際にはまたお世話になりたいと思います</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="assets/pic2.png" alt="">
+                        <h3>投稿者さん</h3>
+                        <p>ラウンジもお料理美味しいですしメニューも豊富、スタッフの方もフレンドリーに接していただきました
+                            またハワイに行く際にはまたお世話になりたいと思います</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="assets/pic3.png" alt="">
+                        <h3>投稿者さん</h3>
+                        <p>ラウンジもお料理美味しいですしメニューも豊富、スタッフの方もフレンドリーに接していただきました
+                            またハワイに行く際にはまたお世話になりたいと思います</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="assets/pic4.png" alt="">
+                        <h3>投稿者さん</h3>
+                        <p>ラウンジもお料理美味しいですしメニューも豊富、スタッフの方もフレンドリーに接していただきました
+                            またハワイに行く際にはまたお世話になりたいと思います</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================== CONTACT ====================-->
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>お</span>
+            <span>問</span>
+            <span>い</span>
+            <span>合</span>
+            <span>わ</span>
+            <span>せ</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="assets/contact-img.jpg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="名前">
+                    <input type="email" placeholder="メールアドレス">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="人数">
+                    <input type="text" placeholder="件名">
+                </div>
+                <textarea placeholder="詳細" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="送信する">
+            </form>
+        </div>
+    </section>
+    <!--==================== BRAND ====================-->
+    <section class="brand-container">
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/6.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!--==================== FOOTER ====================-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>5年の歳月と約125億円を費やして、新しく生まれ変わったアロヒラニ・リゾートがグランドオープンしました。</p>
+            </div>
+            <div class="box">
+                <h3>人気の旅行地</h3>
+                <a href="#">沖縄</a>
+                <a href="#">ハワイ</a>
+                <a href="#">北海道</a>
+            </div>
+            <div class="box">
+                <h3>アクセス</h3>
+                <a href="#">ホーム</a>
+                <a href="#">予約</a>
+            </div>
+            <div class="box">
+                <h3>SNS</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            </div>
+        </div>
+        <h1 class="credit"><span> @chihokyo </span> all rights reserved! </h1>
+    </section>
+
+    <!--==================== SWIPER JS====================-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--==================== JS ====================-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
