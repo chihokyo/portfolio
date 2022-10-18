@@ -2,7 +2,7 @@
 
 /* 谷歌字体网站 https://fonts.google.com/ */
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
 /*==================== VARIABLES CSS 变量 CSS ====================*/
 
 :root {
@@ -25,7 +25,7 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   /*========== Font and typography 字体印刷 ==========*/
-  --body-font: "Noto Sans SC", sans-serif;
+  --body-font: 'Noto Sans SC', sans-serif;
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -368,7 +368,7 @@ img {
   margin-right: var(--mb-0-25);
 }
 
-.home__scroll-arrow {
+.home__scroll-mouse {
   font-size: 1.25rem;
 }
 
@@ -466,7 +466,7 @@ img {
 /*==================== SKILLS ====================*/
 
 .skills__container {
-  row-gap: 0;
+  row-gap: 5rem;
 }
 
 .skills__header {
@@ -717,8 +717,14 @@ img {
   border-radius: 0.5rem;
 }
 
+.services__modal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .services__modal-services {
-  row-gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 .services__modal-service {
@@ -741,8 +747,12 @@ img {
 }
 
 .services__modal-icon {
-  color: var(--first-color);
+  color: gold;
   margin-left: var(--mb-0-25);
+}
+
+.services__modal-icon span {
+  color: var(--first-color);
 }
 
 /* Active Modal */
@@ -783,7 +793,7 @@ img {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: "";
+  content: '';
 }
 
 .swiper-portfolio-icon {
@@ -1263,17 +1273,13 @@ img {
 #heart-anime {
   padding-top: 2em;
   display: grid;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/66955/web_heart_animation.png");
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/66955/web_heart_animation.png');
   background-repeat: no-repeat;
   background-size: 2900%;
   background-position: left;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   cursor: pointer;
-}
-
-.animate {
-  animation: heart-burst 0.8s steps(28) forwards;
 }
 
 @keyframes heart-burst {
